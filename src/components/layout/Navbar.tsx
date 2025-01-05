@@ -56,7 +56,7 @@ const Navbar = () => {
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
+      <div className="mx-auto flex w-full max-w-7xl gap-5 items-center justify-between">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -65,12 +65,12 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="h-9 w-9 object-contain" />
-          <p className="flex cursor-pointer text-[18px] font-bold text-white ">
+          <p className="flex cursor-pointer font-bold text-white ">
             {config.html.title}
           </p>
         </Link>
 
-        <ul className="hidden list-none flex-row gap-10 sm:flex">
+        <ul className="hidden list-none   flex-row gap-10 md:flex">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -78,12 +78,12 @@ const Navbar = () => {
                 active === nav.id ? "text-white" : "text-secondary"
               } cursor-pointer text-[18px] font-medium hover:text-white`}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a className="text-sm" href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
 
-        <div className="flex flex-1 items-center justify-end sm:hidden">
+        <div className="flex flex-1 items-center justify-end md:hidden cursor-pointer">
           <img
             src={toggle ? close : menu}
             alt="menu"

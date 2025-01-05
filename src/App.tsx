@@ -10,9 +10,12 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Education,
+  Internship,
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
+// import Education from "./components/sections/Education";
 
 const App = () => {
   useEffect(() => {
@@ -29,10 +32,12 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Experience />
+        <Education/>
+        <Internship/>
+        {/* <Experience /> */}
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

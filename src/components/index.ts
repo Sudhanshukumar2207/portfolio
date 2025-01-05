@@ -14,6 +14,9 @@ import Works from "./sections/Works";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 import CanvasLoader from "./layout/Loader";
+import Education from "./sections/Education";
+import Internship from "./sections/Internship";
+
 
 export {
   Hero,
@@ -29,4 +32,6 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Education,
+  Internship,
 };

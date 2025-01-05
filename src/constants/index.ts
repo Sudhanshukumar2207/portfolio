@@ -5,6 +5,8 @@ import type {
   TExperience,
   TTestimonial,
   TProject,
+  TEducation,
+  TInternship,
 } from "../types";
 
 import {
@@ -32,6 +34,24 @@ import {
   jobit,
   tripguide,
   threejs,
+  android,
+  ios,
+  ppu,
+  vgu,
+  cbse,
+  rays,
+  c,
+  cpp,
+  python,
+  java,
+  jquery,
+  expressjs,
+  mysql,
+  github,
+  contact,
+  eduinfo,
+  pl,
+  restroqr,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -39,9 +59,18 @@ export const navLinks: TNavLink[] = [
     id: "about",
     title: "About",
   },
+  {id:"education",
+    title:"Education"
+  },
   {
-    id: "work",
-    title: "Work",
+    id: "internship",
+    title: "Internship",
+  },
+  {id:"skill",
+    title:"Skill"
+  },
+  {id:"project",
+    title:"Project"
   },
   {
     id: "contact",
@@ -55,16 +84,16 @@ const services: TService[] = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Andriod Developer",
+    icon: android,
+  },
+  {
+    title: "IOS Developer",
+    icon: ios,
   },
 ];
 
@@ -81,18 +110,22 @@ const technologies: TTechnology[] = [
     name: "JavaScript",
     icon: javascript,
   },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "jQuery",
+    icon: jquery,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -102,26 +135,127 @@ const technologies: TTechnology[] = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Express JS",
+    icon: expressjs,
   },
   {
     name: "Three JS",
     icon: threejs,
   },
   {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
     name: "git",
     icon: git,
   },
+  // {
+  //   name: "gitHub",
+  //   icon: github,
+  // },
+  // {
+  //   name: "Java",
+  //   icon: java,
+  // },
+  // {
+  //   name: "Python",
+  //   icon: python,
+  // },
+  // {
+  //   name: "C++",
+  //   icon: cpp,
+  // },
+  // {
+  //   name: "C",
+  //   icon: c,
+  // },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
+];
+const Educations: TEducation[] =[
   {
-    name: "figma",
-    icon: figma,
+    session: "2023-2025",
+    class: "Master of Computer Application",
+    collage: "Vivekanands Global University, Jaipur",
+    marks: "Aggregate: 7.9 CGPA (upto 2nd sem)",
+    icon:vgu,
+    iconBg:"gray"
   },
   {
-    name: "docker",
-    icon: docker,
+    session: "2020-2023",
+    class: "Bachelor of Computer Application",
+    collage: "Patliputra University, Patna",
+    marks: "Aggregate: 62%",
+    icon:ppu,
+    iconBg:"gray"
+  },
+  {
+    session: "2020",
+    class: "Higher Secondary Schooling",
+    collage: "Central Board of Secondary Education(CBSE)",
+    marks: "Aggregate: 73%",
+    icon:cbse,
+    iconBg:"#383E56"
+  },
+  {
+    session: "2017",
+    class: "Secondary Schooling",
+    collage: "Central Board of Secondary Education(CBSE)",
+    marks: "Aggregate: 9.6 CGPA",
+    icon:cbse,
+    iconBg:"#383E56"
   },
 ];
+
+const internships: TInternship[] = [
+  {
+    date:"Apr'23-Jul'23",
+    companyName:"Rays edutech. pvt. ltd , Patna",
+    post:"Full Stack Web Developer",
+    role:"Team Leader",
+    technology:"HTML, CSS, JS, jQuery, Python, MySQL",
+    icon:rays,
+    iconBg:"gray",
+  },
+  // {
+  //   date:"Apr'23-Jul'23",
+  //   companyName:"Rays edutech. pvt. ltd , Patna",
+  //   post:"Full Stack Web Developer",
+  //   role:"Team Leader",
+  //   technology:"HTML, CSS, JS, jQuery, Python, MySQL",
+  //   icon:rays,
+  //   iconBg:"gray",
+  // },
+  // {
+  //   date:"Apr'23-Jul'23",
+  //   companyName:"Rays edutech. pvt. ltd , Patna",
+  //   post:"Full Stack Web Developer",
+  //   role:"Team Leader",
+  //   technology:"HTML, CSS, JS, jQuery, Python, MySQL",
+  //   icon:rays,
+  //   iconBg:"gray",
+  // },
+  // {
+  //   date:"Apr'23-Jul'23",
+  //   companyName:"Rays edutech. pvt. ltd , Patna",
+  //   post:"Full Stack Web Developer",
+  //   role:"Team Leader",
+  //   technology:"HTML, CSS, JS, jQuery, Python, MySQL",
+  //   icon:rays,
+  //   iconBg:"gray",
+  // },
+]
 
 const experiences: TExperience[] = [
   {
@@ -207,68 +341,93 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Patliputra Logistics Control System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "It is a WEB Application for logistic in which they can manage Order, Depot, Distributer, Transport, vehicle details and also manage driver payments and other expenses and also generate for each order",
     tags: [
       {
-        name: "react",
+        name: "Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MySQL",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Python",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: pl,
+    sourceCodeLink: "https://github.com/Sudhanshukumar2207/patliputra_logistic_control_system",
+    liveLink:"http://pcplpatna.com/",
   },
   {
-    name: "Job IT",
+    name: "Admission Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "It is a WEB Application for Admission Counselor in which they can manage collage, course detail and generate quotations and distribute them to students via email and WhatsApp.",
     tags: [
       {
-        name: "react",
+        name: "Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "MySQL",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Python",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: eduinfo,
+    sourceCodeLink: "https://github.com/Sudhanshukumar2207/admission_management_system",
+    liveLink:"https://eduinfome.in/",
   },
   {
-    name: "Trip Guide",
+    name: "RestroQR Menu",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "It is a WEB Application for Restaurant in which they can generate QR for Customer Menu and can view & analyze order",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Supabase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: restroqr,
+    sourceCodeLink: "https://github.com/Sudhanshukumar2207/RestroMenu",
+    liveLink:"https://restroqrmenu.netlify.app/",
+  },
+  {
+    name: "Contact Book",
+    description:
+      "It is a WEB Application of Contact Book in which we can store our contact details, search and edit & delete the contact.",
+    tags: [
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: contact,
+    sourceCodeLink: "https://github.com/Sudhanshukumar2207/contact_backend",
+    liveLink:"https://sudhanshu-contactbook.netlify.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, Educations, internships };

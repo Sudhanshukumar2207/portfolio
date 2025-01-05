@@ -29,9 +29,40 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import ios from "./ios.png";
+import android from "./android.png";
+import ppu from "./ppu.png";
+import vgu from "./vgu.png";
+import cbse from "./cbse.png";
+import rays from "./Rays.png";
+import c from "./c.png";
+import cpp from "./c++.png";
+import python from "./python.png";
+import java from "./java.png";
+import expressjs from "./expressjs.png";
+import mysql from "./mysql.png";
+import jquery from "./jquerry.png";
+import contact  from "./contact.png";
+import eduinfo from "./eduinfo.png";
+import pl from "./pl.png";
+import restroqr from "./restroqr.png";
 
 export {
+  contact,
+  eduinfo,
+  pl,
+  restroqr,
+  c,
+  cpp,
+  python,
+  java,
+  jquery,
+  expressjs,
+  mysql,
+  ios,
+  android,
   logo,
+  rays,
   backend,
   creator,
   mobile,
@@ -59,4 +90,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  ppu,
+  vgu,
+  cbse,
 };
