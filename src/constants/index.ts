@@ -52,7 +52,7 @@ import {
   eduinfo,
   pl,
   restroqr,
-  portfolio,
+  // portfolio,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -344,7 +344,7 @@ const projects: TProject[] = [
   {
     name: "Patliputra Logistics Control System",
     description:
-      "It is a WEB Application for logistic in which they can manage Order, Depot, Distributer, Transport, vehicle details and also manage driver payments and other expenses and also generate for each order",
+      "It is a WEB Application for logistic in which they can manage Order, Depot, Distributer, Transport, vehicle details and also manage driver payments and other expenses and also generate for each order.",
     tags: [
       {
         name: "Javascript",
@@ -388,7 +388,7 @@ const projects: TProject[] = [
   {
     name: "RestroQR Menu",
     description:
-      "It is a WEB Application for Restaurant in which they can generate QR for Customer Menu and can view & analyze order",
+      "It is a WEB Application for Restaurant in which they can generate QR for Customer Menu and can view & analyze order and Customer can view menu by scanning QR and order items.",
     tags: [
       {
         name: "React",
@@ -407,28 +407,28 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/Sudhanshukumar2207/RestroMenu",
     liveLink:"https://restroqrmenu.netlify.app/",
   },
-  {
-    name: "My Portfolio",
-    description:
-      "It is a WEB Application for Restaurant in which they can generate QR for Customer Menu and can view & analyze order",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Threejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: portfolio,
-    sourceCodeLink: "https://github.com/Sudhanshukumar2207/portfolio",
-    liveLink:"https://sudhanshu01-portfolio.netlify.app/",
-  },
+  // {
+  //   name: "My Portfolio",
+  //   description:
+  //     "It is My Portfolio",
+  //   tags: [
+  //     {
+  //       name: "React",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Threejs",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Typescript",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: portfolio,
+  //   sourceCodeLink: "https://github.com/Sudhanshukumar2207/portfolio",
+  //   liveLink:"https://sudhanshu01-portfolio.netlify.app/",
+  // },
   {
     name: "Contact Book",
     description:
