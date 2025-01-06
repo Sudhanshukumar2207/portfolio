@@ -40,14 +40,14 @@ import {
   vgu,
   cbse,
   rays,
-  // c,
-  // cpp,
-  // python,
-  // java,
+  c,
+  cpp,
+  python,
+  java,
   jquery,
   expressjs,
   mysql,
-  // github,
+  github,
   contact,
   eduinfo,
   pl,
@@ -155,26 +155,26 @@ const technologies: TTechnology[] = [
     name: "git",
     icon: git,
   },
-  // {
-  //   name: "gitHub",
-  //   icon: github,
-  // },
-  // {
-  //   name: "Java",
-  //   icon: java,
-  // },
-  // {
-  //   name: "Python",
-  //   icon: python,
-  // },
-  // {
-  //   name: "C++",
-  //   icon: cpp,
-  // },
-  // {
-  //   name: "C",
-  //   icon: c,
-  // },
+  {
+    name: "gitHub",
+    icon: github,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "C",
+    icon: c,
+  },
   // {
   //   name: "figma",
   //   icon: figma,
@@ -426,8 +426,8 @@ const projects: TProject[] = [
       },
     ],
     image: portfolio,
-    sourceCodeLink: "https://github.com/Sudhanshukumar2207/contact_backend",
-    liveLink:"https://sudhanshu-contactbook.netlify.app/",
+    sourceCodeLink: "https://github.com/Sudhanshukumar2207/portfolio",
+    liveLink:"https://sudhanshu01-portfolio.netlify.app/",
   },
   {
     name: "Contact Book",
@@ -451,28 +451,6 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/Sudhanshukumar2207/contact_backend",
     liveLink:"https://sudhanshu-contactbook.netlify.app/",
   },
-  // {
-  //   name: "Contact Book",
-  //   description:
-  //     "It is a WEB Application of Contact Book in which we can store our contact details, search and edit & delete the contact.",
-  //   tags: [
-  //     {
-  //       name: "Javascript",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "MongoDB",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "Express",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: contact,
-  //   sourceCodeLink: "https://github.com/Sudhanshukumar2207/contact_backend",
-  //   liveLink:"https://sudhanshu-contactbook.netlify.app/",
-  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects, Educations, internships };

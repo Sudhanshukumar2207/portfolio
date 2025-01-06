@@ -1,15 +1,19 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../../constants/styles";
-import { ComputersCanvas } from "../canvas";
+// import { ComputersCanvas } from "../canvas";
+import Button from './Button.tsx'
 import { config } from "../../constants/config";
+// import { Link } from "react-router-dom";
+import resume from "../../assets/Sudhanshu_Kumar.pdf";
 
 const Hero = () => {
   return (
     <section className={`relative mx-auto h-screen w-full `}>
       <div
-        className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5 `}
-      >
+        className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-col items-start `}
+      ><div className="flex gap-5">
+        
         <div className="mt-5 flex flex-col items-center justify-center">
           <div className="h-5 w-5 rounded-full bg-[#915EFF]" />
           <div className="violet-gradient h-40 w-1 sm:h-80" />
@@ -25,8 +29,14 @@ const Hero = () => {
           </p>
         </div>
       </div>
+        <p className=" w-full text-center">
+          {/* <button className="p-2 bg-blue-700 rounded-lg hover:bg-blue-600">Download Resume</button> */}
+          <a href={resume} download="Sudhanshu_Resume.pdf"><Button/></a>
+          
+          </p>
+      </div>
     
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className="xs:bottom-10 absolute bottom-32 flex w-full items-center justify-center">
         <a href="#about">
