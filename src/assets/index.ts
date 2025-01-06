@@ -46,8 +46,12 @@ import contact  from "./contact.png";
 import eduinfo from "./eduinfo.png";
 import pl from "./pl.png";
 import restroqr from "./restroqr.png";
+import portfolio from "./portfolio.png";
+import golive from "./golive1.png";
 
 export {
+  portfolio,
+  golive,
   contact,
   eduinfo,
   pl,

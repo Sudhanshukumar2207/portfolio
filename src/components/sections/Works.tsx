@@ -8,6 +8,7 @@ import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { TProject } from "../../types";
+import { golive } from "../../assets";
 
 const ProjectCard: React.FC<{ index: number } & TProject> = ({
   index,
@@ -51,7 +52,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
                 className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
               >
                 <img
-                  src={github}
+                  src={golive}
                   alt="github"
                   className="h-5/6 w-5/6 object-contain"
                 />
@@ -78,6 +79,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
 };
 
 const Works = () => {
+  console.log(projects)
   return (
     <>
       <Header useMotion={true} {...config.sections.works} />
@@ -91,12 +93,12 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap justify-center gap-7">
-      {/* <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-7"> */}
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+  {projects.map((project, index) => (
+    <ProjectCard key={`project-${index}`} index={index} {...project} />
+  ))}
+</div>
+
     </>
   );
 };

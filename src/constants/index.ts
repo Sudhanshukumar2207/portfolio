@@ -52,6 +52,7 @@ import {
   eduinfo,
   pl,
   restroqr,
+  portfolio,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -407,6 +408,28 @@ const projects: TProject[] = [
     liveLink:"https://restroqrmenu.netlify.app/",
   },
   {
+    name: "My Portfolio",
+    description:
+      "It is a WEB Application for Restaurant in which they can generate QR for Customer Menu and can view & analyze order",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Threejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    sourceCodeLink: "https://github.com/Sudhanshukumar2207/contact_backend",
+    liveLink:"https://sudhanshu-contactbook.netlify.app/",
+  },
+  {
     name: "Contact Book",
     description:
       "It is a WEB Application of Contact Book in which we can store our contact details, search and edit & delete the contact.",
@@ -428,6 +451,28 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/Sudhanshukumar2207/contact_backend",
     liveLink:"https://sudhanshu-contactbook.netlify.app/",
   },
+  // {
+  //   name: "Contact Book",
+  //   description:
+  //     "It is a WEB Application of Contact Book in which we can store our contact details, search and edit & delete the contact.",
+  //   tags: [
+  //     {
+  //       name: "Javascript",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Express",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: contact,
+  //   sourceCodeLink: "https://github.com/Sudhanshukumar2207/contact_backend",
+  //   liveLink:"https://sudhanshu-contactbook.netlify.app/",
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects, Educations, internships };
