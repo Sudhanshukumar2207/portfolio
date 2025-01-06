@@ -32,30 +32,30 @@ const App = () => {
           <Hero />
         </div>
         
-        <div className="relative z-0">
+        {/* <div className="relative z-0"> */}
           <About />
-          <StarsCanvas />
-        </div>
+          {/* <StarsCanvas />
+        </div> */}
         
-        <div className="relative z-0">
+        {/* <div className="relative z-0"> */}
           <Education/>
-          <StarsCanvas />
-        </div>
+          {/* <StarsCanvas />
+        </div> */}
         
-        <div className="relative z-0">
+        {/* <div className="relative z-0"> */}
           <Internship/>
-          <StarsCanvas />
-        </div>
+          {/* <StarsCanvas />
+        </div> */}
         {/* <Experience /> */}
         <div className="relative z-0">
           <Tech />
           <StarsCanvas />
         </div>
         
-        <div className="relative z-0">
+        {/* <div className="relative z-0"> */}
           <Works />
-          <StarsCanvas />
-        </div>
+          {/* <StarsCanvas />
+        </div> */}
         
         {/* <Feedbacks /> */}
         <div className="relative z-0">

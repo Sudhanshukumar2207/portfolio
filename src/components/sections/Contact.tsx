@@ -96,6 +96,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder={placeholder}
                   className="bg-tertiary placeholder:text-secondary rounded-lg border-none px-6 py-4 font-medium text-white outline-none"
+                  required
                   {...(input === "message" && { rows: 7 })}
                 />
               </label>
