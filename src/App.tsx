@@ -3,8 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import {
   About,
   Contact,
-  Experience,
-  Feedbacks,
+  // Experience,
+  // Feedbacks,
   Hero,
   Navbar,
   Tech,
